@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Info Form</title>
+	<style>
+		.indent{
+			margin-left:50px;
+		}
+		.indentSmall{
+			margin-left:25px;
+		}
+	</style>
+</head>
+	
+<body bgcolor="#d0ddff">
+	<a href="index">Back to Home Page</a><br>
+	<p class="indent">Individual Information<br><br>
+	<form method="post" action="http://philscis.com/cgi-bin/quick.cgi">
+		First Name: <input type="text" name="firstName"><br>
+		Last Name: <input type="text" name="lastName"><br>
+		Birth Date: <input type="date" name="birthDate"><br>
+		Sex: Male <input type="radio" name="sex" value="male" checked>
+			Female <input type="radio" name="sex" value="female"><br>
+		Income:<br>
+			<input class="indent" type="radio" name="income" value="$0-$20K"> $0-$20K<br>
+			<input class="indent" type="radio" name="income" value="$20K-$40K" checked> $20K-$40K<br>
+			<input class="indent" type="radio" name="income" value="$40K-$60K"> $40K-$60K<br>
+			<input class="indent" type="radio" name="income" value="$60K-$100K"> 60K-$100K<br>
+			<input class="indent" type="radio" name="income" value="> $100K"> > $100K<br>
+		Where you gather news:<br>
+			<input class="indent" type="checkbox" name="news" value="books"> Books<br>
+			<input class="indent" type="checkbox" name="news" value="newspaper"> Newspaper<br>
+			<input class="indent" type="checkbox" name="news" value="radio"> Radio<br>
+			<input class="indent" type="checkbox" name="news" value="tv"> TV<br>
+			<input class="indent" type="checkbox" name="news" value="magazines"> Magazines<br>
+		Favorite Foods:<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="chinese"> Chinese<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="french"> French<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="italian"> Italian<br><br>
+			
+		<input class="indentSmall" type="Submit" name="submit">
+		<input class="indentSmall" type="Reset" name="rst">
+
+	</form>
+<body>
+<html>
