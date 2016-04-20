@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Info Form</title>
+	<style>
+		.indent{
+			margin-left:50px;
+		}
+		.indentSmall{
+			margin-left:25px;
+		}
+	</style>
+	<script language="JavaScript">
+		<!--
+		function isValid(){
+			
+			if(document.form.firstName.value == ""){
+				alert("First name must be filled out")
+				return false;
+			}
+			
+			if(document.form.lastName.value == ""){
+				alert("last name blank")
+				return false;
+			}
+			
+			if((document.form.month.value == "") ||
+				(document.form.day.value == "") ||
+				(document.form.year.value == "")){
+				alert("Birth Date must be filled out.")
+				return false;
+			}
+			
+			if((document.form.month.value < 1) ||
+				(document.form.month.value > 12)){
+				alert("Birth month must be between 1 and 12.")
+				return false;
+			}
+			
+			if((document.form.day.value < 1) ||
+				(document.form.day.value > 31)){
+				alert("Birth day must be between 1 and 31.")
+				return false;
+			}
+			
+			if((document.form.year.value < 1931) ||
+				(document.form.year.value > 2014)){
+				alert("Birth year must be between 1931 and 2014.")
+				return false;
+			}
+
+			if((!document.form.income[0].checked) &&
+			   (!document.form.income[1].checked) &&
+			   (!document.form.income[2].checked) &&
+			   (!document.form.income[3].checked) &&
+			   (!document.form.income[4].checked)){
+				alert("Must select and income.")
+				return false;
+			}
+				
+			if((!document.form.news[0].checked) &&
+			   (!document.form.news[1].checked) &&
+			   (!document.form.news[2].checked) &&
+			   (!document.form.news[3].checked) &&
+			   (!document.form.news[4].checked)){
+				alert("Must select at least one source of news.")
+				return false;
+			}
+			
+			if((!document.form.favoriteFoods[0].checked) &&
+			   (!document.form.favoriteFoods[1].checked) &&
+			   (!document.form.favoriteFoods[2].checked)){
+				alert("Must select at least one favorite foods.")
+				return false;
+			}
+		
+		return true;			
+		}
+		-->
+	</script>
+</head>
+	
+<body bgcolor="#d0ddff">
+	<a href="index">Back to Home Page</a><br>
+	<p class="indent">Individual Information<br><br>
+	<form name="form" method="post" action="http://philscis.com/cgi-bin/quick.cgi" onsubmit="return isValid();">
+		First Name: <input type="text" name="firstName"><br>
+		Last Name: <input type="text" name="lastName"><br>
+		Birth Date (mm/dd/yyyy): <input type="number" name="month" style="width:3em">/
+								 <input type="number" name="day" style="width:4em">/
+								 <input type="number" name="year" style="width:4em"><br>
+		Sex: Male <input type="radio" name="sex" value="male" checked>
+			Female <input type="radio" name="sex" value="female"><br>
+		Income:<br>
+			<input class="indent" type="radio" name="income" value="$0-$20K"> $0-$20K<br>
+			<input class="indent" type="radio" name="income" value="$20K-$40K" checked> $20K-$40K<br>
+			<input class="indent" type="radio" name="income" value="$40K-$60K"> $40K-$60K<br>
+			<input class="indent" type="radio" name="income" value="$60K-$100K"> 60K-$100K<br>
+			<input class="indent" type="radio" name="income" value="> $100K"> > $100K<br>
+		Where you gather news:<br>
+			<input class="indent" type="checkbox" name="news" value="books"> Books<br>
+			<input class="indent" type="checkbox" name="news" value="newspaper"> Newspaper<br>
+			<input class="indent" type="checkbox" name="news" value="radio"> Radio<br>
+			<input class="indent" type="checkbox" name="news" value="tv"> TV<br>
+			<input class="indent" type="checkbox" name="news" value="magazines"> Magazines<br>
+		Favorite Foods:<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="chinese"> Chinese<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="french"> French<br>
+			<input class="indent" type="checkbox" name="favoriteFoods" value="italian"> Italian<br><br>
+			
+		<input class="indentSmall" type="Submit" name="submit">
+		<input class="indentSmall" type="Reset" name="rst">
+
+	</form>
+<body>
+<html>
