@@ -40,10 +40,9 @@
 	</tr>
 	</table>
 
-	<?php
-	/*
 	<hr>
-
+<?php
+/*
 	<h2>Hobbies</h2>
 
 	<ul>
